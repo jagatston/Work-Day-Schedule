@@ -7,23 +7,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <link
+    <link 
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
+<!-- content -->
   <body>
       <!-- jumbotron header -->
-    <div
-      class="jumbotron jumbotron-fluid bg-info text-light color-red"
-      id="jumbotron"
-    >
+    <div class="jumbotron jumbotron-fluid bg-info text-light">
       <div class="container text-center">
         <h1>Work Day Scheduler</h1>
         <h2>A simple way to map out your day</h2>
+        <span class="p">The current Time is: </span>
+        <span class="p" id="current-date-time">March 27, 2021, 4:55:00</span>
       </div>
     </div>
     <!-- work scheduler -->
@@ -64,15 +63,51 @@
           <h3>Events:</h3>
           <br />
           <ul class="list-group" id="skills-list"></ul>
+          <!-- table with the events for the day -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Time</th>
+                <th scope="col">Date</th>
+                <th scope="col">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>9:00 AM</td>
+                <td>3/29</td>
+                <td>Begin my work day</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>10:00 AM</td>
+                <td>3/29</td>
+                <td>Go to meeting</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>  
+                <td>12:00 PM</td>
+                <td>3/29</td>
+                <td>Lunch</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </body>
+
   <!-- third party APIs -->
   <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"
   ></script>
+  <script src="moment.js"></script>
+  <script>
+    moment().format();
+</script>
   <script src="./js/script.js"></script>
+</body>
 </html>
