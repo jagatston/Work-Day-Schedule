@@ -8,4 +8,4 @@ This is a work day scheduler for my coding bootcamp I made.
 
 ## Link to Deployed Application
 
-[Github Pages Webpage](https://jagatston.github.io/Advanced-CSS-Portfolio/)
+[Github Pages Webpage](https://jagatston.github.io/Work-Day-Schedule/)
